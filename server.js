@@ -15,7 +15,8 @@ const listener = app.listen(process.env.PORT || 3000, () => {
 
 // membuat koneksi ke database mongodb
 mongoose.connect(
-    process.env.MONGODB_URI,
+    // process.env.MONGODB_URI,
+    'mongodb+srv://alkasakti:alkasakti12@cluster0.hoy9b.mongodb.net/footballclub?retryWrites=true&w=majority',
     // { useFindAndModify: false, useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true },
     (err) => {
         if (err) return console.log("Error: ", err);
